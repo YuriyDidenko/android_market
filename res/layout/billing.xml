@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <TabHost
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/tabHost" android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+            <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+            </TabWidget>
+            <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                <LinearLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New Text"
+                            android:id="@+id/tv_tab1"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:id="@+id/tab2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                </LinearLayout>
+                <LinearLayout
+                        android:id="@+id/tab3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                </LinearLayout>
+                <LinearLayout
+                        android:id="@+id/tab0"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/btn_tab1_save"
+            android:layout_alignLeft="@+id/tabHost" android:layout_alignParentBottom="true"
+            android:layout_marginLeft="100dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:id="@+id/btn_tab1_delete" android:layout_toRightOf="@+id/btn_tab1_save"
+            android:layout_alignTop="@+id/btn_tab1_save"/>
+</RelativeLayout>

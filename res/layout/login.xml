@@ -1,0 +1,42 @@
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="your login..."
+            android:id="@+id/et_login" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="your pass..."
+            android:id="@+id/et_pass" android:layout_centerHorizontal="true" android:layout_below="@+id/et_login"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/tv_reg" android:layout_alignLeft="@+id/et_login" android:layout_below="@+id/et_pass"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="forgot a password"
+            android:id="@+id/tv_forgot"
+            android:layout_alignParentRight="true" android:layout_below="@+id/et_pass"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's go!"
+            android:id="@+id/btn_go"
+            android:layout_centerHorizontal="true" android:layout_alignParentBottom="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="about us"
+            android:id="@+id/tv_about" android:layout_alignLeft="@+id/btn_go" android:layout_alignParentTop="true"
+            android:textColor="#70b3ff"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bucket"
+            android:id="@+id/btn_go_bucket" android:layout_alignRight="@+id/tv_forgot" android:layout_below="@+id/tv_about"/>
+</RelativeLayout>
